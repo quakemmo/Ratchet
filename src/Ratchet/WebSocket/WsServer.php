@@ -135,7 +135,8 @@ class WsServer implements HttpServerInterface {
                 $this->onControlFrame($frame, $wsConn);
             },
             true,
-            $this->ueFlowFactory
+            $this->ueFlowFactory,
+			1000 // max 1000 bytes websocket payload size
         );
 
         $this->connections->attach($conn, new ConnContext($wsConn, $streamer));
