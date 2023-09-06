@@ -13,7 +13,7 @@ trait CloseResponseTrait {
      */
     private function close(ConnectionInterface $conn, $code = 400, array $additional_headers = []) {
         $response = new Response($code, array_merge([
-            'X-Powered-By' => \Ratchet\VERSION
+            //'X-Powered-By' => \Ratchet\VERSION
         ], $additional_headers));
 
         $conn->send(Message::toString($response));

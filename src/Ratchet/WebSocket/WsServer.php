@@ -105,7 +105,6 @@ class WsServer implements HttpServerInterface {
      * {@inheritdoc}
      */
     public function onOpen(ConnectionInterface $conn, RequestInterface $request = null) {
-echo "WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n";
         if (null === $request) {
             throw new \UnexpectedValueException('$request can not be null');
         }
