@@ -1,4 +1,11 @@
 {
+	"repositories": [
+		{
+			"type":	"vcs",
+			"url":	"https://github.com/quakemmo/rfc6455"
+		}
+	],
+
     "name": "cboden/ratchet"
   , "type": "library"
   , "description": "PHP WebSocket library"
@@ -27,7 +34,7 @@
     }
   , "require": {
         "php": ">=5.4.2"
-      , "ratchet/rfc6455": "^0.3.1"
+      , "ratchet/rfc6455": "dev-master"
       , "react/socket": "^1.0 || ^0.8 || ^0.7 || ^0.6 || ^0.5"
       , "react/event-loop": ">=0.4"
       , "guzzlehttp/psr7": "^1.7|^2.0"
